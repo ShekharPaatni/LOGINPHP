@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> ATM STATUS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="atm.js"></script>
+<style>
+div{
+display:inline-block;
+}
+</style>
+</head>
+<body>
+<div>
+<h1> ATM STATUS</h1>
+
+<p id="currentAmount"></p>
+
+<h1>Fill Status</h1>
+<table id="mytable">
+<tr>
+<td>Amount</td><td>Number of notes</td>
+</tr>
+<tr>
+<td>100</td><td><input type="text" id="oneHund"value=0 placeholder="No. of notes"></td>
+</tr>
+<tr>
+<td>500</td><td><input type="text" value=0 id="fiveHund" placeholder="No. of notes"></td>
+</tr>
+<tr>
+<td>2000</td><td><input type="text" value=0 id="twoThow" placeholder="No. of notes"></td>
+</tr>
+<tr>
+<td colspan=2 style="float:right;"><input type="button" value="Add Money" id="add"></td>
+</tr>
+</table>
+
+</div>
+<div style="margin-left:25%;">
+<h1> Withdraw amount</h1>
+<input type="text" placeholder="Enter the Amount" id="withdraw"/>
+<br><br><input type="button" value="Withdraw" id="withDraw" style="float:right"/>
+<input type="button" value="Remove Log" id="remove" />
+<br>
+<p id="errorwithdraw"></p>
+<table id="mytable1" border="2px solid black" cellpadding=5px ></table>
+</div>
+</body>
+</html>
